@@ -2,14 +2,14 @@
 
 
 ### HELMETS
-nodejs main.js
+nodejs helmets.js
 
-rm ../public/helmets/index.html
+rm ../public/helmets/index.html 2>/dev/null 
 
 mkdir -p ../public/helmets/
-cat head.html >> ../public/helmets/index.html
+cat ../website/header.html >> ../public/helmets/index.html
 cat ../tmp/helmets.html >> ../public/helmets/index.html
-cat footer.html >> ../public/helmets/index.html
+cat ../website/footer.html >> ../public/helmets/index.html
 
 for ID in $( cat ../tmp/helmets.txt )
         do
