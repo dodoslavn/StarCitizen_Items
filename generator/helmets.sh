@@ -4,9 +4,12 @@
 ### HELMETS
 nodejs helmets.js
 
-rm ../public/helmets/index.html 2>/dev/null 
+rm ../public/helmets/ 2>/dev/null 
 
 mkdir -p ../public/helmets/
+mkdir -p ../public/helmets/light/
+mkdir -p ../public/helmets/medium/
+mkdir -p ../public/helmets/heavy/
 cat ../website/header.html >> ../public/helmets/index.html
 cat ../tmp/helmets.html >> ../public/helmets/index.html
 cat ../website/footer.html >> ../public/helmets/index.html
