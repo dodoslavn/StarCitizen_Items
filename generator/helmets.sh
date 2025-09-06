@@ -4,7 +4,7 @@
 ### HELMETS
 nodejs helmets.js
 
-rm ../public/helmets/ 2>/dev/null 
+rm -rf ../public/helmets* 2>/dev/null 
 
 mkdir -p ../public/helmets/
 mkdir -p ../public/helmets-light/
