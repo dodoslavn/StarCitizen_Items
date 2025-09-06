@@ -25,6 +25,11 @@ cat ../website/footer.html >> ../public/helmets-heavy/index.html
 
 for ID in $( cat ../tmp/helmets.txt )
         do
-        echo " > Helmets - downloading ID: "$ID
-        wget "https://cstone.space/uifimages/"$ID".png" -O "../public/helmets/"$ID".png" 2>/dev/null
+	if [ -a "../public/helmets/"$ID".png" ]
+		then
+	        echo " > Helmets - already downloaded ID: "$ID
+	else
+	        echo " > Helmets - downloading ID: "$ID
+	        wget "https://cstone.space/uifimages/"$ID".png" -O "../public/helmets/"$ID".png" 2>/dev/null
+		fi
         done
