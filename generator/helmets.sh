@@ -23,7 +23,6 @@ cat ../website/footer.html >> ../public/helmets-light/index.html
 cat ../website/footer.html >> ../public/helmets-medium/index.html
 cat ../website/footer.html >> ../public/helmets-heavy/index.html
 
-exit
 for ID in $( cat ../tmp/helmets.txt )
         do
         echo " > Helmets - downloading ID: "$ID
