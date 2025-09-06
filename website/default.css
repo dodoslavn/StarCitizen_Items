@@ -47,3 +47,8 @@ div#content div#panel ul li a:hover
     {
     color: #006fdd;
     }
+
+div#main table tbody tr td h3 
+    {
+    text-align: center;
+    }
