@@ -10,9 +10,18 @@ mkdir -p ../public/helmets/
 mkdir -p ../public/helmets-light/
 mkdir -p ../public/helmets-medium/
 mkdir -p ../public/helmets-heavy/
-cat ../website/header.html >> ../public/helmets/index.html
-cat ../tmp/helmets.html >> ../public/helmets/index.html
-cat ../website/footer.html >> ../public/helmets/index.html
+
+cat ../website/header.html >> ../public/helmets-light/index.html
+cat ../website/header.html >> ../public/helmets-medium/index.html
+cat ../website/header.html >> ../public/helmets-heavy/index.html
+
+cat ../tmp/helmets-light.html >> ../public/helmets-light/index.html
+cat ../tmp/helmets-medium.html >> ../public/helmets-medium/index.html
+cat ../tmp/helmets-heavy.html >> ../public/helmets-heavy/index.html
+
+cat ../website/footer.html >> ../public/helmets-light/index.html
+cat ../website/footer.html >> ../public/helmets-medium/index.html
+cat ../website/footer.html >> ../public/helmets-heavy/index.html
 
 exit
 for ID in $( cat ../tmp/helmets.txt )

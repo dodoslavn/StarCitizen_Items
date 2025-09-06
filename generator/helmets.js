@@ -37,7 +37,7 @@ async function Helmets() {
             html += `<td><img src=/helmets/` + item.ItemId + `.png></td></tr></table>`;
 	    if ( item.Atype == "Heavy Armor" )
 		{ html_heavy += html; }
-	    elif ( item.Atype == "Medium Armor" )
+	    else if ( item.Atype == "Medium Armor" )
 		{ html_medium += html; }
 	    else
 		 { html_light += html; }
