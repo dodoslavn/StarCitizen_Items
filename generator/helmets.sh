@@ -4,13 +4,15 @@
 ### HELMETS
 nodejs helmets.js
 
-rm -rf ../public/helmets/ 2>/dev/null 
+rm ../public/helmets/ 2>/dev/null 
 
-mkdir ../public/helmets/
-mkdir ../public/helmets/light/
-cat ../website/header.html >> ../public/helmets/light/index.html
-cat ../tmp/helmets.html >> ../public/helmets/light/index.html
-cat ../website/footer.html >> ../public/helmets/light/index.html
+mkdir -p ../public/helmets/
+mkdir -p ../public/helmets-light/
+mkdir -p ../public/helmets-medium/
+mkdir -p ../public/helmets-heavy/
+cat ../website/header.html >> ../public/helmets/index.html
+cat ../tmp/helmets.html >> ../public/helmets/index.html
+cat ../website/footer.html >> ../public/helmets/index.html
 
 exit
 for ID in $( cat ../tmp/helmets.txt )
