@@ -4,13 +4,15 @@
 ### HELMETS
 nodejs helmets.js
 
-rm ../public/helmets/index.html 2>/dev/null 
+rm -rf ../public/helmets/ 2>/dev/null 
 
-mkdir -p ../public/helmets/
-cat ../website/header.html >> ../public/helmets/index.html
-cat ../tmp/helmets.html >> ../public/helmets/index.html
-cat ../website/footer.html >> ../public/helmets/index.html
+mkdir ../public/helmets/
+mkdir ../public/helmets/light/
+cat ../website/header.html >> ../public/helmets/light/index.html
+cat ../tmp/helmets.html >> ../public/helmets/light/index.html
+cat ../website/footer.html >> ../public/helmets/light/index.html
 
+exit
 for ID in $( cat ../tmp/helmets.txt )
         do
         echo " > Helmets - downloading ID: "$ID

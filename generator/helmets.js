@@ -17,7 +17,9 @@ async function Helmets() {
     console.log("########################");
     console.log("### Helmets");
     ids = "";
-    html = "";
+    html_light = "";
+    html_medium = "";
+    html_heavy = "";
 
     try {
         const response = await fetch(endpoints.helmets);
@@ -29,10 +31,16 @@ async function Helmets() {
             console.log(" > Helmets - name:", item.Name);
             ids += " " + item.ItemId;
 
-            html += "<table><tr><td><ul>";
+            html = "<table><tr><td><ul>";
             for (const [key, value] of Object.entries(item)) { html += `<li><strong>${key}:</strong> ${value}</li>`; }
             html += "</ul></td>";
             html += `<td><img src=/helmets/` + item.ItemId + `.png></td></tr></table>`;
+	    if ( item.Atype == "Heavy Armor" )
+		{ html_heavy += html; }
+	    elif ( item.Atype == "Medium Armor" )
+		{ html_medium += html; }
+	    else
+		 { html_light += html; }
         }
     }
     catch (err) {
@@ -40,7 +48,10 @@ async function Helmets() {
         process.exit(1);
     }
     save("helmets.txt", ids);
-    save("helmets.html", html);
+    save("helmets-heavy.html", html_heavy);
+    save("helmets-medium.html", html_medium);
+    save("helmets-light.html", html_light);
 }
 
 Helmets();
+
