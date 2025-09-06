@@ -25,7 +25,7 @@ cat ../website/footer.html >> ../public/helmets-heavy/index.html
 
 for ID in $( cat ../tmp/helmets.txt )
         do
-	if [ -a "../public/helmets/"$ID".png" ]
+	if [ -f "../public/helmets/"$ID".png" ]
 		then
 	        echo " > Helmets - already downloaded ID: "$ID
 	else
