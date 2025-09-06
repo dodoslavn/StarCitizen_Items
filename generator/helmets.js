@@ -34,7 +34,7 @@ async function Helmets() {
             html = "<table><tr><td colspan='2'>" + item.Name + "</td></tr><tr><td><ul>";
             for (const [key, value] of Object.entries(item)) 
 				{ 
-				if ( key != "Name" or key != "ItemId" or key != "ItemCodeName" )
+				if ( key != "Name" || key != "ItemId" || key != "ItemCodeName" )
 					{ html += `<li><strong>${key}:</strong> ${value}</li>`; }
 				}
             html += "</ul></td>";
