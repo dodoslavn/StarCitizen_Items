@@ -31,8 +31,12 @@ async function Helmets() {
             console.log(" > Helmets - name:", item.Name);
             ids += " " + item.ItemId;
 
-            html = "<table><tr><td><ul>";
-            for (const [key, value] of Object.entries(item)) { html += `<li><strong>${key}:</strong> ${value}</li>`; }
+            html = "<table><tr><td colspan='2'>" + item.Name + "</td></tr><tr><td><ul>";
+            for (const [key, value] of Object.entries(item)) 
+				{ 
+				if ( key != "Name" or key != "ItemId" or key != "ItemCodeName" )
+					{ html += `<li><strong>${key}:</strong> ${value}</li>`; }
+				}
             html += "</ul></td>";
             html += `<td><img src=/helmets/` + item.ItemId + `.png></td></tr></table>`;
 	    if ( item.Atype == "Heavy Armor" )
