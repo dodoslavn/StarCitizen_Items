@@ -31,7 +31,7 @@ async function Helmets() {
             console.log(" > Helmets - name:", item.Name);
             ids += " " + item.ItemId;
 
-            html = "<table><tr><td colspan='2'>" + item.Name + "</td></tr><tr><td><ul>";
+            html = "<table><tr><td colspan='2'><h3>" + item.Name + "</h3></td></tr><tr><td><ul>";
             for (const [key, value] of Object.entries(item)) 
 				{ 
 				if ( key != "Name" && key != "ItemId" && key != "ItemCodeName" )
