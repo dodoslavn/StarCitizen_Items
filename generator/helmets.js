@@ -34,9 +34,9 @@ async function Helmets() {
             html = "<table><tr><td colspan='2'><h3>" + item.Name + "</h3></td></tr><tr><td><ul>";
             for (const [key, value] of Object.entries(item)) 
 				{ 
-				value = value.replace(/\\n/g, "<br>");
+				value_new = value.replace(/\\n/g, "<br>");
 				if ( key != "Name" && key != "ItemId" && key != "ItemCodeName" )
-					{ html += `<li><strong>${key}:</strong> ${value}</li>`; }
+					{ html += `<li><strong>${key}:</strong> ${value_new}</li>`; }
 				}
             html += "</ul></td>";
             html += `<td><img src=/helmets/` + item.ItemId + `.png></td></tr></table>`;
