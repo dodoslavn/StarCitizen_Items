@@ -55,8 +55,8 @@ async function Helmets() {
         console.error(" > Issue downloading arms:", err.message);
         process.exit(1);
     }
-    save("arms.txt", ids);
-    save("arms-all.html", html_all);
+    save("undersuits.txt", ids);
+    save("undersuits.html", html_all);
     //save("arms-heavy.html", html_heavy);
     //save("arms-medium.html", html_medium);
     //save("arms-light.html", html_light);
