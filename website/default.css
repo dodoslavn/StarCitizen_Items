@@ -57,4 +57,5 @@ div#main table tbody tr td h3
 div#content div#main table tbody tr td img
     {
     max-width: 60rem;
+    max-height: 30rem;
     }
