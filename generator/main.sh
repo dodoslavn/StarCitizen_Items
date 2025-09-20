@@ -13,3 +13,4 @@ cp  ../website/default.css ../public/
 ./torsos.sh  
 ./legs.sh
 ./backpacks.sh
+./undersuits.sh
