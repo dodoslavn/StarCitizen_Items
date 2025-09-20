@@ -12,3 +12,4 @@ cp  ../website/default.css ../public/
 ./arms.sh
 ./torsos.sh  
 ./legs.sh
+./backpacks.sh
