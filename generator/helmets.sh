@@ -2,9 +2,9 @@
 
 
 ### HELMETS
-nodejs helmets.js
-
 rm -rf ../public/helmets-* 2>/dev/null 
+
+nodejs helmets.js
 
 mkdir -p ../public/helmets/
 mkdir -p ../public/helmets-light/
