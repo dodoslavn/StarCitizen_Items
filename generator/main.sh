@@ -10,4 +10,4 @@ cp  ../website/default.css ../public/
 
 ./helmets.sh
 ./arms.sh
-  
+./torsos.sh
