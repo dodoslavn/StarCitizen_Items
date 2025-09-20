@@ -15,9 +15,9 @@ cat ../website/header.html >> ../public/backpacks-light/index.html
 cat ../website/header.html >> ../public/backpacks-medium/index.html
 cat ../website/header.html >> ../public/backpacks-heavy/index.html
 
-cat ../tmp/backpacks-light.html >> ../public/arms-light/index.html
-cat ../tmp/backpacks-medium.html >> ../public/arms-medium/index.html
-cat ../tmp/backpacks-heavy.html >> ../public/arms-heavy/index.html
+cat ../tmp/backpacks-light.html >> ../public/backpacks-light/index.html
+cat ../tmp/backpacks-medium.html >> ../public/backpacks-medium/index.html
+cat ../tmp/backpacks-heavy.html >> ../public/backpacks-heavy/index.html
 
 cat ../website/footer.html >> ../public/backpacks-light/index.html
 cat ../website/footer.html >> ../public/backpacks-medium/index.html
