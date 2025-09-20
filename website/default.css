@@ -14,14 +14,15 @@ div#content
     margin-right: auto;
     min-width: 92rem;
     padding-top: 1rem;
+    display: flex;
     }
 
 div#main
     {
-    
+    flex: 1;
     }
 
-div#panel {
+div#panel div#panel_content {
     background-color: #1e1e1e;
     width: 20rem;
     float: left;
@@ -30,12 +31,12 @@ div#panel {
     margin-right: 1rem;
 }
 
-div#content div#panel ul li 
+div#content div#panel div#panel_content ul li 
     {
     font-size: 1.5rem;
     }
 
-div#content div#panel ul li a 
+div#content div#panel div#panel_content ul li a 
     {
     font-size: 1rem;
     padding-left: 2rem;
@@ -43,7 +44,7 @@ div#content div#panel ul li a
     text-decoration: none;
     }
 
-div#content div#panel ul li a:hover 
+div#content div#panel div#panel_content ul li a:hover 
     {
     color: #006fdd;
     }
