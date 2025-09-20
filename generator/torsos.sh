@@ -15,9 +15,9 @@ cat ../website/header.html >> ../public/torsos-light/index.html
 cat ../website/header.html >> ../public/torsos-medium/index.html
 cat ../website/header.html >> ../public/torsos-heavy/index.html
 
-cat ../tmp/torsos-light.html >> ../public/arms-light/index.html
-cat ../tmp/torsos-medium.html >> ../public/arms-medium/index.html
-cat ../tmp/torsos-heavy.html >> ../public/arms-heavy/index.html
+cat ../tmp/torsos-light.html >> ../public/torsos-light/index.html
+cat ../tmp/torsos-medium.html >> ../public/torsos-medium/index.html
+cat ../tmp/torsos-heavy.html >> ../public/torsos-heavy/index.html
 
 cat ../website/footer.html >> ../public/torsos-light/index.html
 cat ../website/footer.html >> ../public/torsos-medium/index.html
