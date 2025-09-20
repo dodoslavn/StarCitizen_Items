@@ -32,6 +32,7 @@ async function Helmets() {
             ids += " " + item.ItemId;
 
             html = "<table><tr><td colspan='2'><h3>" + item.Name + "</h3></td></tr><tr><td><ul>";
+			html += `<td><img src=/helmets/` + item.ItemId + `.png></td>`;
             for (const [key, value] of Object.entries(item)) 
 				{ 
 				value_new = value.replace(/\\n/g, "<br>");
@@ -39,7 +40,7 @@ async function Helmets() {
 					{ html += `<li><strong>${key}:</strong> ${value_new}</li>`; }
 				}
             html += "</ul></td>";
-            html += `<td><img src=/helmets/` + item.ItemId + `.png></td></tr></table>`;
+            html += `</tr></table>`;
 	    if ( item.Atype == "Heavy Armor" )
 		{ html_heavy += html; }
 	    else if ( item.Atype == "Medium Armor" )
