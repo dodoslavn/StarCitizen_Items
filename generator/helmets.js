@@ -40,7 +40,7 @@ async function Helmets() {
 					{ html += `<li><strong>${key}:</strong> ${value_new}</li>`; }
 				}
             html += "</ul></td>";
-            html += `</tr></table>`;
+            html += "</tr></table>\n";
 	    if ( item.Atype == "Heavy Armor" )
 		{ html_heavy += html; }
 	    else if ( item.Atype == "Medium Armor" )
