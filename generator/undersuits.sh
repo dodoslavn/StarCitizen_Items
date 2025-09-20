@@ -2,7 +2,7 @@
 
 
 ### HELMETS
-rm -rf ../public/undersuits-* 2>/dev/null 
+rm -rf ../public/undersuits/index.html 2>/dev/null 
 
 nodejs undersuits.js
 
