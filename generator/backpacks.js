@@ -41,9 +41,9 @@ async function Helmets() {
 				}
             html += "</ul></td>";
             html += "</tr></table>\n";
-	    if ( item.Atype == "Heavy Armor" )
+	    if ( item.Atype == "Heavy Backpack" )
 		{ html_heavy += html; }
-	    else if ( item.Atype == "Medium Armor" )
+	    else if ( item.Atype == "Medium Backpack" )
 		{ html_medium += html; }
 	    else
 		 { html_light += html; }
