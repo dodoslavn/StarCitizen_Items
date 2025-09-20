@@ -9,5 +9,5 @@ cat ../website/footer.html >> ../public/index.html
 cp  ../website/default.css ../public/
 
 ./helmets.sh
-
+./arms.sh
   
