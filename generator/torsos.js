@@ -32,7 +32,7 @@ async function Helmets() {
             ids += " " + item.ItemId;
 
             html = "<table><tr><td colspan='2'><h3>" + item.Name + "</h3></td></tr><tr>";
-			html += `<td><img src=/torsos/` + item.ItemId + `.png></td><td><ul>`;
+			html += `<td><img onerror="this.onerror=null; this.src='/notfound.png';" src=/torsos/` + item.ItemId + `.png></td><td><ul>`;
             for (const [key, value] of Object.entries(item)) 
 				{ 
 				value_new = String(value).replace(/\\n/g, "<br>");
